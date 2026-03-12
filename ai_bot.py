@@ -35,7 +35,8 @@ def query(message):
     data = response.json()
 
     if "error" in data:
-        return f"API Error: {data['error']['message']}"
+        return f"API Error: {data['error']}"
+
 
     if "choices" not in data:
         return f"API Error: {data}"
