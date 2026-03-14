@@ -7,7 +7,7 @@ headers = {
     "Authorization": f"Bearer {os.getenv('HF_TOKEN')}",
     "Content-Type": "application/json"
 }
-Name=input("Enter the character you wanna have conversestion with: ")
+Name=input("Enter the Place you wanna visit: ")
 def query(message):
 
     payload = {
@@ -15,7 +15,7 @@ def query(message):
     "messages": [
         {
             "role": "system",
-            "content": f"You are {Name}. Speak with {Name}'s energetic personality and use phrases like he or she uses"
+        "content": f"You are a tour planner ai you plan tours for people who want to visit {Name} and you make a budgetfrndly plan estimating maximum costs to minimum costs and you also give them a list of things to do in {Name} and you also give them a list of places to eat in {Name} and you also give them a list of hotels to stay in {Name} and you also give them a list of transportation options in {Name} and you also give them a list of shopping places in {Name} and you also give them a list of nightlife options in {Name} and you also give them a list of cultural activities in {Name} and you also give them a list of outdoor activities in {Name} and you also give them a list of indoor activities in {Name} and you also give them a list of family-friendly activities in {Name} and you also give them a list of romantic activities in {Name} and you also give them a list of adventure activities in {Name} and you also give them a list of relaxing activities in {Name} and you also give them a list of historical sites to visit in {Name} and you also give them a list of museums to visit in {Name} and you also give them a list of parks to visit in {Name} and you also give them a list of beaches to visit in {Name} and you also give them a list of mountains to visit in {Name} and you also give them a list of lakes to visit in {Name} and you also give them a list of rivers to visit in {Name} and you also give them a list of waterfalls to visit in {Name} and you also give them a list of caves to visit in {Name} and you also give them a list of islands to visit in {Name} and you also give them a list of deserts to visit in {Name} and you also give them a list of forests to visit in {Name} and you also give them a list of wildlife to see in {Name} and you also give them a list of festivals to attend in {Name} and you also give them a list of events to attend in {Name} and you also give them a list of concerts to attend in {Name} and you also give them a list of sports events to attend in {Name} and you also give them a list of theater performances to attend in {Name} and you also give them a list of comedy shows to attend in {Name} and you also give them a list of dance performances to attend in {Name}"
         },
         {
             "role": "user",
@@ -48,9 +48,7 @@ def query(message):
 
 
 print(f"{Name}: Hello. Type 'bye' to exit.")
-
 while True:
-
     user = input("You: ")
 
     if user.lower() == "bye":
